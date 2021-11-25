@@ -15,6 +15,7 @@ body {
 
 img {
   max-width: 100%;
+  overflow: cover;
 }
 
 input:focus {
@@ -425,7 +426,7 @@ template {
   -webkit-transform: translateY(15%);
           transform: translateY(15%);
   color: #FFFFFF;
-  background-color: #5db7d8;
+  background-color: #5bd3ff;
   padding: 2px;
   border-radius: 1px;
 }
@@ -434,7 +435,7 @@ template {
   padding: 1px 10px;
   border: none;
   color: rgba(177, 79, 43, 0.85);
-  border-bottom: 2px solid #5db7d8;
+  border-bottom: 2px solid #5bd3ff;
 }
 
 .search__button {
@@ -451,7 +452,6 @@ template {
           justify-content: space-between;
   padding: 0;
   text-align: center;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -459,10 +459,33 @@ template {
   list-style-type: none;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar__list:hover {
   background-color: #B14F2B;
+  color: #5bd3ff;
+  -webkit-animation-name: name;
+          animation-name: name;
+}
+
+@-webkit-keyframes name {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+@keyframes name {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 50px;
+  }
 }
 
 .navbar__list:not(:last-child) {
@@ -473,8 +496,57 @@ template {
 .navbar__link {
   text-decoration: none;
   color: #FFFFFF;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
   display: block;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block__image {
+  width: 400px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+
+.block-top {
+  position: relative;
+}
+
+.block-top:not(:last-child)::after {
+  content: '';
+  margin-right: 10px;
+}
+
+.block-top-title {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  margin: 0;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */
