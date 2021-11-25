@@ -6,6 +6,7 @@
 body {
   color: #B14F2B;
   font-family: 'Didact Gothic', sans-serif;
+  background-color: #fbf6f4;
 }
 
 .container {
@@ -20,7 +21,7 @@ img {
 
 input:focus {
   outline: none;
-  border-bottom: 2px solid rgba(177, 79, 43, 0.85);
+  border-bottom: 2px solid #ff875b;
 }
 
 button {
@@ -371,7 +372,9 @@ template {
 }
 
 .header {
-  margin: 30px 0;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  background-color: #FFFFFF;
 }
 
 .header-top {
@@ -388,7 +391,8 @@ template {
 }
 
 .header-bottom {
-  background-color: rgba(177, 79, 43, 0.85);
+  background-color: #ff875b;
+  margin-bottom: 60px;
 }
 
 .social {
@@ -434,7 +438,7 @@ template {
 .search {
   padding: 1px 10px;
   border: none;
-  color: rgba(177, 79, 43, 0.85);
+  color: #ff875b;
   border-bottom: 2px solid #5bd3ff;
 }
 
@@ -464,7 +468,7 @@ template {
 }
 
 .navbar__list:hover {
-  background-color: #B14F2B;
+  background-color: #ff7b4a;
   color: #5bd3ff;
   -webkit-animation-name: name;
           animation-name: name;
@@ -505,48 +509,51 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 900px;
 }
 
 .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 300px;
 }
 
-.block__image {
-  width: 400px;
-  height: 250px;
+.block__left {
+  margin-right: 20px;
+}
+
+.block__item {
+  width: 100%;
+  height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 10;
+  margin-bottom: 15px;
+  border-radius: 1px;
 }
 
-.block-top {
+.block-wrapper {
   position: relative;
 }
 
-.block-top:not(:last-child)::after {
-  content: '';
-  margin-right: 10px;
+.block__title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  background-color: #fbf6f4;
+  z-index: 10;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 7px;
+  color: #B14F2B;
 }
 
-.block-top-title {
+.line__sky {
   position: absolute;
-  left: 5px;
-  top: 0;
-  margin: 0;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-decoration: underline;
-  text-transform: capitalize;
+  width: 100%;
+  bottom: 0;
+  background-color: #ff875b;
+  height: 4px;
+  border-radius: 1px;
 }
 /*# sourceMappingURL=style.css.map */
