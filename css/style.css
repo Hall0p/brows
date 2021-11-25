@@ -4,8 +4,8 @@
 }
 
 body {
-  color: #B14F2B;
-  font-family: 'Didact Gothic', sans-serif;
+  color: #ff7b4a;
+  font-family: 'Open Sans', sans-serif;
   background-color: #fbf6f4;
 }
 
@@ -433,6 +433,7 @@ template {
   background-color: #5bd3ff;
   padding: 2px;
   border-radius: 1px;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .search {
