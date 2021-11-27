@@ -1,16 +1,16 @@
 .hero
   display: flex
+  width: 700px
 .block
   width: 300px
   &__left
-    margin-right: 20px
+    margin-right: 50px
   &__item
     width: 100%
     height: 170px
     object-fit: cover
     margin-bottom: 15px
     border-radius: 1px
-
   &-wrapper
     position: relative
   &__title
@@ -18,17 +18,20 @@
     text-align: center
     margin: 0
     margin-bottom: 20px
-    background-color: $bg
     z-index: 10
     width: min-content
     margin-left: auto
     margin-right: auto
     padding: 0 7px
     color: $text
+    font-weight: 300
 .line__sky
   position: absolute
   width: 100%
-  bottom: 0
+  bottom: -5px
   background-color: $primary
-  height: 4px
+  height: 2px
   border-radius: 1px
+.wrapper
+  display: flex
+  justify-content: space-between
