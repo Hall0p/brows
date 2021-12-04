@@ -1,6 +1,6 @@
 <?php include('header.php')?>
 <div class="container">
-  <h2 class="hero__title"></h2>
+  <h2 class="hero__title">Отзывы</h2>
   <div class="wrapper">
 
 <?php include('sidebar.php')?>
